@@ -29,7 +29,7 @@ Gemirro::CLI.options.command 'server' do
       abort
     end
 
-    @pid_file = File.expand_path(File.join(config.destination,
+    @pid_file = opts[:P] || File.expand_path(File.join(config.destination,
                                            '..',
                                            'gemirro.pid'))
     require 'gemirro/server'
