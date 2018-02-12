@@ -9,6 +9,7 @@ Gemirro::CLI.options.command 'server' do
   on :status, 'Status of web server'
   on :c=, :config=, 'Path to the configuration file'
   on :l=, :log_level=, 'Set logger level'
+  on :P=, :pid=, 'Path to the pid file'
 
   @pid_file = nil
 
